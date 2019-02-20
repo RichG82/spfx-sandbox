@@ -1,0 +1,28 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.mockNewsFilter {
+  .searchBoxContainer {
+    display: flex;
+  }
+
+  .searchBox {
+    flex: 1;
+  }
+
+  .searchButton {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .filterSection {
+    display: flex;
+
+    >div {
+      flex: 1;
+    }
+  }
+
+  .resultsSection {
+    display: block;
+  }
+}

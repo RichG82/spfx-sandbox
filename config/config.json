@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "hello-world-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/helloWorld/HelloWorldWebPart.js",
+          "manifest": "./src/webparts/helloWorld/HelloWorldWebPart.manifest.json"
+        }
+      ]
+    },
+    "test-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/test/TestApplicationCustomizer.js",
+          "manifest": "./src/extensions/test/TestApplicationCustomizer.manifest.json"
+        }
+      ]
+    },
+    "mock-news-filter-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/mockNewsFilter/MockNewsFilterWebPart.js",
+          "manifest": "./src/webparts/mockNewsFilter/MockNewsFilterWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": "https://code.jquery.com/jquery-3.1.0.min.js"
+  },
+  "localizedResources": {
+    "HelloWorldWebPartStrings": "lib/webparts/helloWorld/loc/{locale}.js",
+    "TestApplicationCustomizerStrings": "lib/extensions/test/loc/{locale}.js",
+    "MockNewsFilterWebPartStrings": "lib/webparts/mockNewsFilter/loc/{locale}.js"
+  }
+}

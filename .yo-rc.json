@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.7.1",
+    "libraryName": "sandbox",
+    "libraryId": "044eddf9-9d87-4709-886f-091fa23622d7",
+    "environment": "spo",
+    "packageManager": "npm",
+    "isCreatingSolution": false,
+    "componentType": "webpart"
+  }
+}
